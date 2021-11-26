@@ -1,8 +1,11 @@
-<div class="col">
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title"><%= list.name %></h5>
-      <a href=<%=list_path(list)%> class="btn btn-primary">View the list</a>
+<div class="grid-container p-3">
+  <div class="card">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
+        <h5 class="card-title"><%= list.name %></h5>
+    </div>
+    <div>
+        <a href=<%=list_path(list)%> class="btn btn-primary">View this list</a>
+        <%= link_to 'Delete this list', list_path(list), method: :delete, data: { confirm:'Sure?' }%>
     </div>
   </div>
 </div>
