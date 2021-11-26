@@ -13,4 +13,9 @@
 <h4>Have something better? Make a new list:</h4>
 <%= render "new" %>
 
-<%= render "shared/dropdown" %>
+<%= cl_image_tag("ybqlqajhvgn4kllvvf0e",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("dyjkh6yoxsh7dkifk8p5",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
