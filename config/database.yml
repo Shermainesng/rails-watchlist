@@ -5,8 +5,8 @@ default: &default
 
 development:
   <<: *default
-  database: rails-watchlist_development
+  database: rails-watch-list_development
 
 test:
   <<: *default
-  database: rails-watchlist_test
+  database: rails-watch-list_test
